@@ -31,7 +31,7 @@
         vpc_id: "{{vpcid}}"
         rules:
           - proto: tcp
-            frpm_port: 22
+            from_port: 22
             to_port: 22
             cidr_ip: "{{MYIP}}"
       register: BastionSG_out
